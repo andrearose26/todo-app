@@ -75,22 +75,24 @@ $(document).ready(function () {
     });
 
     //When user clicks on a list item
-    $('ul').on('click', 'li', function () {
+    $('ul').on('click', '.check', function () {
 
         //Find the class of 'check' within the list item
         let checkBox = $(this).find('.check');
 
         //Toggle between an empty checkbox and a checked one
         checkBox.toggleClass("todo done");
-        $(this).toggleClass("completed")
+        $(this).toggleClass("done")
     });
 
-    //When the remove button is clicked, remove the item
-    $('ul').on('click', 'span', 'a', function () {
+    // When the remove button is clicked, remove the item
+    $('ul').on('click', '.remove', 'a', function () {
 
         const toDoListItem = $(this).parent();
+
         toDoListItem.remove();
     });
+
 });
 
 

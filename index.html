@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <title>To Do List App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>What should I do today?</h1>
+    <form>
+      <label for="item">Add a task:</label>
+
+      <div class="task-form">
+        <div class="text-date">
+          <input type="text" id="item" placeholder="Task">
+          <input type="date" id="date" placeholder="Schedule">
+        </div>
+        <textarea placeholder="Description" id="description" rows="4" cols="50"">
+        </textarea>
+        <div class=" file-submit">
+          <input type="file" id="file">
+          <input type="submit" value="Add Item">
+        </div>
+      </div>
+      
+    </form>
+    <ul>
+      <!-- To do items get added here -->
+    </ul>
+    
+  </div>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
